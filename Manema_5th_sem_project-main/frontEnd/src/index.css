@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.custom-toast {
+    background: rgba(0,0,12,0.8);
+    color: lightgray;
+}
+
+.custom-toast-fail {
+    background: rgba(0,0,12,0.8);
+    color: red;
+}
+
+.custom-progress-bar {
+    background: gray;
+}
+
+.custom-progress-bar-fail {
+    background: red;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} 
+
+
+@layer utilities {
+    .no-button-in-input {
+      -moz-appearance: textfield;
+    }
+    
+    .no-button-in-input::-webkit-outer-spin-button,
+    .no-button-in-input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
